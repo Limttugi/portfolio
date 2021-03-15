@@ -5,6 +5,7 @@ HTML과 CSS를 사용하여 만든 페이지 입니다.
 
 ![실행1](https://user-images.githubusercontent.com/67939901/111111584-f6b1ac00-85a1-11eb-9e24-9370730e664e.PNG)
 
+
 ------------
 
 전체적인 틀은 flex를 사용하였습니다.
