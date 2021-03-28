@@ -4,7 +4,45 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>TodoList</title>
+    <link rel="stylesheet" href="Todolist.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
   </head>
-  <body></body>
+  <body>
+    <div id="container">
+      <header>
+        <h1>JJoonDoList</h1>
+        <section id="day_time">
+          <article id="day">Day</article>
+          <article id="time">Time</article>
+        </section>
+      </header>
+
+      <section class="search">
+        <input type="text" placeholder="할 일을 입력후 엔터를 치세요" >
+          <i class="far fa-clipboard"></i>
+        </input> 
+      </section>
+
+      <section class="todo">
+        <article id="todo_check">
+          <h2>기한 없음!</h2>
+          <ul>
+            <li>1. 무엇을 해야 할까</li>
+            <li>2</li>
+            <li>3</li>
+          </ul>
+        </article>
+        <article id="todo_time">
+          <h2>기간 제한!</h2>
+          <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+          </ul>
+        </article>
+      </section>
+    </div>
+  </body>
 </html>
