@@ -4,10 +4,16 @@
   margin: 0;
 }
 
+body {
+  margin-left: 10%;
+  height: 100vh;
+}
+
 #container {
   position: absolute;
   width: 80%;
-  left: 10%;
+  height: 100%;
+  background-color: #ff9;
 }
 
 header {
@@ -42,39 +48,55 @@ header h1 {
   right: 0;
   font-size: 18px;
   padding: 5px;
+  border-left: 1px solid black;
 }
 
 .todo {
+  position: absolute;
+  display: flex;
   margin-top: 60px;
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  justify-content: space-between;
+  /* border: 1px solid black; */
 }
 
-.todo article h2 {
-  font-family: "Nanum Brush Script", cursive;
-  font-size: 40px;
+.todo .tdItem {
+  width: 50%;
+  /* border: 1px solid black; */
+}
+
+.todo .tdItem h2 {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
   text-align: center;
   border-top: 1px solid lightgray;
   border-bottom: 1px solid lightgray;
+  font-family: "Nanum Brush Script", cursive;
+  font-size: 40px;
   width: 80%;
-  padding: 10px;
+  padding: 10px 0px;
 }
 
-.todo article ul li {
+.todo .tdItem ul {
+  /* border: 1px solid black; */
+  position: relative;
+  width: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0;
+}
+
+.todo .tdItem ul li {
   font-family: "Nunito Sans", sans-serif;
   list-style: none;
   font-size: 20px;
-  padding: 5px;
+  border-bottom: 1px solid #bbcc99;
+  padding-top: 7px;
 }
 
-#todo_check {
-  display: inline-block;
-  width: 50%;
-}
-
-#todo_time {
-  position: absolute;
-  display: inline-block;
-  left: 50%;
-  width: 50%;
+.todo .tdItem ul li:first-child {
+  padding-top: 20px;
 }
